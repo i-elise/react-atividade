@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-atividade/static/css/main.66f28388.css",
+    "main.js": "/react-atividade/static/js/main.da7f170a.js",
+    "static/js/787.3d8de46e.chunk.js": "/react-atividade/static/js/787.3d8de46e.chunk.js",
+    "index.html": "/react-atividade/index.html",
+    "main.66f28388.css.map": "/react-atividade/static/css/main.66f28388.css.map",
+    "main.da7f170a.js.map": "/react-atividade/static/js/main.da7f170a.js.map",
+    "787.3d8de46e.chunk.js.map": "/react-atividade/static/js/787.3d8de46e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66f28388.css",
+    "static/js/main.da7f170a.js"
+  ]
+}
