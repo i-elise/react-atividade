@@ -1,6 +1,7 @@
 
 import './App.css';
 import Header from './components/Header';
+import Conteudo from './componentes/Conteudo';
 import Footer from './components/Footer';
 import Content from './components/Content'
 
