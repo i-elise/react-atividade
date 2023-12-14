@@ -36,21 +36,23 @@ const Conteudo = () => {
 
   return (
     <>
-      <ul>
-        {favoritos[0] &&
-          favoritos.map((favorito) => (
-            <li
-              key={favorito.nomeSite}
-              onClick={() => editFavorito(favorito.nomeSite)}
-              style={favorito.isImportante ? { color: "red" } : {}}
-            >
-              {favorito.nomeSite} : {favorito.url}:{favorito.isImportante}
-            </li>
-          ))}
-      </ul>
+      <div className={styles.favoritos}>
+        <ul>
+          {favoritos[0] &&
+            favoritos.map((favorito) => (
+              <li
+                key={favorito.nomeSite}
+                onClick={() => editFavorito(favorito.nomeSite)}
+                style={favorito.isImportante ? { color: "red" } : {}}
+              >
+                {favorito.nomeSite} : {favorito.url}{favorito.isImportante}
+              </li>
+            ))}
+        </ul>
+      </div>
 
       <div className={styles.area}>
-        <h1>Conteudo</h1>
+        <h1>Adicionar Favorito &#11088;</h1>
         <form className={styles.formulario}>
           <label>Nome do Site</label>
           <input
@@ -62,6 +64,7 @@ const Conteudo = () => {
           ></input>
           <br />
           <label>URL</label>
+          <br />
           <input
             type="url"
             name="url"
@@ -71,16 +74,18 @@ const Conteudo = () => {
             }}
           ></input>
           <br />
-          <input
-            type="checkbox"
-            id="type"
-            name="type"
-            checked={isImportante}
-            onChange={(e) => setIsImportante(!isImportante)}
-          />
-          <label htmlFor="type" style={{ color: "red" }}>
-            Importante
-          </label>
+          <div>
+            <input
+              type="checkbox"
+              id="type"
+              name="type"
+              checked={isImportante}
+              onChange={(e) => setIsImportante(!isImportante)}
+            />
+            <label htmlFor="type" style={{ color: "red" }}>
+              Importante
+            </label>
+          </div>
           <br />
           <input
             type="button"

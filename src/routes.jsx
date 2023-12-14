@@ -7,13 +7,10 @@ import Login from './paginas/Login'
 const Rotas = () => {
   return (
     <BrowserRouter>
-    <Cabecalho>
-    </Cabecalho>
     <Routes>
     <Route path="/" element={<Principal/>}/>
     <Route path="/login" element={<Login/>}/>
     <Route path="/cadastro" element={<CadastroUsuario/>}/>
-
     </Routes>
     </BrowserRouter>
   )

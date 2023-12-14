@@ -1,18 +1,73 @@
-.area
+.area 
 {
   position:relative;
   left:37%;
   top:29%;
-  width:320px;
+  width:500px;
   height:270px;
+  color: white;
+}
+
+.area h1 {
+  text-align: center;
 }
 .area .formulario
 {
-  position:absolute;
-  display:block;
+  max-width: 800px;
+  height: fit-content;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(67, 12, 92, 0.253);
+}
+
+.area .formulario > input {
+  margin: 10px;
+  padding: .25rem;
+  border-radius: 5px;
+  border: none;
+  width: 80%;
+}
+
+.area .formulario > input[type="button"] {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: .5rem;
+  color: white;
+  background-color: purple;
+  cursor: pointer;
+}
+
+.area .formulario > input[type="checkbox"] {
+  margin-right: 20px;
 }
 .fieldset
 {
   width:300px;
   height:250px;
+}
+
+.favoritos {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}
+
+.favoritos > ul {
+  list-style: none;
+  width: 350px;
+
+  color: white;
+}
+
+.favoritos  li {
+  background-color: rgb(37, 25, 25);
+  margin-bottom: 10px;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.favoritos  li:before {
+  content: '\2B50';
+  margin-right: 2px;
 }

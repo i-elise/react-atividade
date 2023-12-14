@@ -8,5 +8,6 @@ footer {
     align-items: center;
     color: white;
     font-weight: bold;
-    margin-top: 5rem;
+    position: fixed;
+    bottom: 0;
 }

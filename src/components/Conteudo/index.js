@@ -18,14 +18,16 @@ export default function Conteudo() {
 
   return (
     <div id="div-favorito" className={styles.conteudo}>
-      <h1>Adicione seu favorito</h1>
-      <form>
-        <label htmlFor="favorito_nome">Nome</label>
-        <input type="text" onChange={(e) => handleNome(e)} />
-        <label htmlFor="favorito_url">URL</label>
-        <input type="text" onChange={(e) => handleURL(e)} />
-        <button type="submit">Adicionar</button>
-      </form>
+      <div className={styles.formConteudo}>
+        <h1>Adicione seu favorito &#11088;</h1>
+        <form>
+          <label htmlFor="favorito_nome">Nome</label>
+          <input type="text" onChange={(e) => handleNome(e)} />
+          <label htmlFor="favorito_url">URL</label>
+          <input type="text" onChange={(e) => handleURL(e)} /> <br />
+          <button type="submit">Adicionar</button>
+        </form>
+      </div>
     </div>
   );
 }

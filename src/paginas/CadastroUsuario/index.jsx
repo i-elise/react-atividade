@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from "../../componentes/Conteudo/Conteudo.module.css";
+import styles from "../../components/Conteudo/Conteudo.module.css";
 
 const CadastroUsuario = () => {
 
@@ -31,27 +31,31 @@ const CadastroUsuario = () => {
     }
 
   return (
-        <div id="div-cadastro-usuario" className={styles.conteudo}>
-          <h1>Cadastro de Usuário</h1>
-          <form>
-            <label htmlFor="cadastro_nome">Nome</label>
-            <input type="text" onChange={(e) => handleNome(e)} />
-            <br/>            <label htmlFor="cadastro_email">Email</label>
-            <input type="text" onChange={(e) => handleEmail(e)} />
-            <br/> 
-            <label htmlFor="cadastro_senha">Senha</label>
-            <input type="text" onChange={(e) => handleSenha(e)} />
-            <br/> 
-            <label htmlFor="cadastro_confirmacaoSenha">Confirmação de Senha</label>
-            <input type="text" onChange={(e) => handleConfirmacaoDeSenha(e)} />
-            <br/> 
-            <button onClick={(e)=>{
-                e.preventDefault();
-                handleSubmit(e)
-            }}>Salvar Usuario</button>
-          </form>
-        </div>
+    <>
+        
+            <div id="div-cadastro-usuario" className={styles.conteudo}>
+            <h1>Cadastro de Usuário</h1>
+            <form>
+                <label htmlFor="cadastro_nome">Nome</label>
+                <input type="text" onChange={(e) => handleNome(e)} />
+                <br/>            <label htmlFor="cadastro_email">Email</label>
+                <input type="text" onChange={(e) => handleEmail(e)} />
+                <br/> 
+                <label htmlFor="cadastro_senha">Senha</label>
+                <input type="text" onChange={(e) => handleSenha(e)} />
+                <br/> 
+                <label htmlFor="cadastro_confirmacaoSenha">Confirmação de Senha</label>
+                <input type="text" onChange={(e) => handleConfirmacaoDeSenha(e)} />
+                <br/> 
+                <button onClick={(e)=>{
+                    e.preventDefault();
+                    handleSubmit(e)
+                }}>Salvar Usuario</button>
+            </form>
+            </div>
+    </>
       );
+     
 }
 
 export default CadastroUsuario

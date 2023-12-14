@@ -6,6 +6,49 @@ top:29%;
 width:320px;
 height:270px;
 }
+
+.conteudo {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    
+}
+
+.formConteudo > h1 {
+    margin-bottom: 2rem;
+}
+
+
+
+.formConteudo {
+    
+
+}
+
+.formConteudo  input {
+
+
+}
+
+.formConteudo button {
+    margin-top: 1rem;
+    padding: .5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background-color: #4f1666;
+}
+
+
+
+
 .area #formulario
 {
 position:absolute;

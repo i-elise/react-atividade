@@ -3,16 +3,29 @@ header {
     height: 4rem;
     padding: .5rem;
     background-color: rgb(49, 49, 49);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 .logo {
-    height: 100%;
+    font-size: 2rem;
+    text-decoration: none;
 }
 
 .logo > img {
     height: 100%;
+}
+
+
+.links {
+    position: fixed;
+    right: 30px;
+    top: 20px;
+
+}
+
+.link {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
